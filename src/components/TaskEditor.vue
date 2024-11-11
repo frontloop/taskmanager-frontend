@@ -30,12 +30,14 @@ const taskStore = useTaskStore()
 const emit = defineEmits(['ontasksaved'])
 
 const save = async () => {
-    if (taskStore.editedDask.id > -1) {
-        await taskStore.save();
-    } else {
-        await taskStore.create()
+    if (taskStore.editedDask.name != '') {
+        if (taskStore.editedDask.id > -1) {
+            await taskStore.save();
+        } else {
+            await taskStore.create()
+        }
+        emit('ontasksaved')
     }
-    emit('ontasksaved')
 }
 
 const cancel = () => {
@@ -89,5 +91,6 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 </style>
