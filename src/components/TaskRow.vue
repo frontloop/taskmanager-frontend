@@ -16,7 +16,7 @@
         <div v-else class="deleteDialog">
             <div class="headLabel">Delete task?</div>
             <p>
-                <button @click="confirmDelete()" style="margin-right: 20px;">yes</button>
+                <button @click="confirmDelete()" style="margin-right: 18px;">yes</button>
                 <button @click="showDeleteDialog = false">No</button>
             </p>
         </div>
@@ -149,5 +149,17 @@ const priorityBackgroundColor = () => {
 
 .priorityUrgent {
     background-color: #b47869;
+}
+
+button {
+  background-color: #5b7891; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 </style>

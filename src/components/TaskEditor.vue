@@ -1,5 +1,5 @@
 <template>
-    <div class="surface">
+    <div class="wrap">
         <p class="fieldLabel">Name</p>
         <input v-model="taskStore.editedDask.name" placeholder="edit me" class="name-input" />
         <p>
@@ -45,17 +45,14 @@ const cancel = () => {
 </script>
 
 <style scoped>
-.surface {
-    position: absolute;
-    background-color: #bdd8df;
+.wrap {
+    background-color: #d0dce6;
     border-radius: 15px;
-    border: 3px solid #7b8b96;
+    border: 2px solid #ececec;
     padding: 20px;
-    top: 300px;
-    left: 33%;
 }
 
-.surface div {
+.wrap div {
     color: rgb(51, 53, 55);
 }
 
@@ -73,12 +70,24 @@ label {
 
 .buttons {
   display: flex;
-  padding-left: 30%;
+  margin-left: 25%;
+  margin-top: 30px;
   gap: 40px;
-  width: 100%;
 }
 
 .name-input {
     width: 400px;
+}
+
+button {
+  background-color: #5b7891; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 </style>
