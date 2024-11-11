@@ -70,7 +70,7 @@ const priorityBackgroundColor = () => {
 
 <style scoped>
 .wrap {
-    background-color: rgba(233, 236, 244, 0.9);
+    background-color: rgba(249, 251, 255, 0.9);
     padding-left: 10px;
     padding-top: 10px;
     border-radius: 8px;
