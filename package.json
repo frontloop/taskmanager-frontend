@@ -1,5 +1,5 @@
 {
-  "name": "task-manager",
+  "name": "taskmanager",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -13,6 +13,7 @@
   "dependencies": {
     "pinia": "^2.2.6",
     "task-manager": "file:",
+    "taskmanager": "file:",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
