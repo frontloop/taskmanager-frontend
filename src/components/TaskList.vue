@@ -35,9 +35,9 @@ const taskStore = useTaskStore()
   }
 
   .editor {
-    position: absolute;
+    position: fixed;
     margin-left: 100px;
-    top: 300px;
+    top: 250px;
     width: 500px;
     filter: drop-shadow(2px -2px 14px #404040);
 }
