@@ -6,7 +6,7 @@
             <label class="fieldLabel">Done:</label>
             <input type="checkbox" v-model="taskStore.editedDask.done">
         </p>
-        <div>
+        <div v-if="taskStore.editedDask.id == -1">
             <label class="fieldLabel">Priority: </label>
             <input type="radio" name="priority" id="priority_low" value="LOW" style="accent-color: green;" v-model="taskStore.editedDask.priority">
             <label for="one">Low</label>
