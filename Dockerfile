@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:19-alpine
 RUN npm install -g http-server
 WORKDIR /app
 COPY package*.json ./
