@@ -1,7 +1,7 @@
 ## Create docker image
 
 ```sh
-docker build -t taskmanager_frontend .
+docker build -t fedor_kotov/taskmanager_frontend .
 ```
 ## Open page
 
